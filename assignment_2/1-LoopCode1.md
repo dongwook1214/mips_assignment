@@ -13,3 +13,16 @@ j LOOP
 nop
 
 EXIT:
+
+1번 수정:
+L:
+slti $2, $1, 0
+beq $2, $0, EXIT
+nop
+addi $1, $1, -1
+
+j L 
+nop
+
+EXIT:
+
